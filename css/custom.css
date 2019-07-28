@@ -1,0 +1,72 @@
+.jumbotron {
+  background-image:url(../img/cosmos.jpg);
+  background-attachment: fixed;
+  height: 600px;
+
+}
+
+.navbar, .navbar-brand {
+  background-color: #244b77;
+}
+
+.primary {
+  background-color: #244b77;
+  color: white;
+}
+
+.secondary {
+  background-color: #487bbf;
+  color: white;
+}
+
+.primary:hover, .secondary:hover {
+  cursor: pointer;
+  background-color: #34c962;
+}
+
+.skills-icon {
+  height:50px;
+  width:50px;
+}
+
+.list {
+  list-style: none;
+}
+
+.projects-wrapper {
+  background-color: #244b77;
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#name {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 left;
+  animation-fill-mode: forwards;
+}
+
+#description {
+  opacity: 0;
+  animation: 1s ease-out 1.5s 1 right;
+  animation-fill-mode: forwards;
+}
